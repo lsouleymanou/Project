@@ -1,0 +1,19 @@
+#!/bin/bash
+
+    #Author : Utrains
+    #Date : 23 October 2022
+
+## ---------- script that Install some packages in Linux -----------------
+
+echo "Packages to begin installing"
+
+yum install wget -y
+yum install net-utils -y
+yum install sysstat -y
+yum install finger -y
+yum install gcc -y
+yum install make -y
+yum install python3 -y
+yum install epel-release -y
+
+echo " Packages have been installed"                                         

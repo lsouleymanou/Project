@@ -1,0 +1,20 @@
+#!/bin/bash
+
+    #Author : Utrains
+    #Date : 24-Oct-2022
+
+## ---------- script that installs apache-----------------
+
+echo "Apache to begin installing !"
+
+yum install httpd -y
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --reload
+systemctl start httpd
+systemctl status httpd
+systemctl enable httpd
+hostname -I
+curl -4 icanhazip.com
+
+echo "Apache has been installed"
